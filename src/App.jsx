@@ -1,4 +1,8 @@
+import { useState } from 'react';
 import './App.scss';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Intro from './Components/Intro/Intro';
 
 function App() {
   const [scrol, setScrol] = useState(false)
@@ -26,22 +30,25 @@ function App() {
   });
 
   document.onkeydown = (e) => {
-    if (e.keyCode == 123) {
+    if (e.keyCode === 123) {
       return false;
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
       return false
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
       return false
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
       return false
-    } else if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    } else if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
       return false
     }
   };
   //
   return (
     <div className="App">
-      
+      <Header/>
+      <Intro/>
+
+      <Footer/>
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
           <path className='scroll-up__svg__path'

@@ -41,7 +41,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $pink;
+  background-color: $black;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -99,13 +99,13 @@ img{
     content: '↑';
   }
   &:hover{
-    color: $pink;
+    color: $black;
   }
   &__svg{
     &__path{
       box-sizing: border-box;
       fill: none;
-      stroke: $pink;
+      stroke: $black;
       stroke-width: 4px;
       transition: .2s;
     }

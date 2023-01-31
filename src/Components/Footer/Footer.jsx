@@ -3,10 +3,10 @@ import './Footer.scss'
 
 export default function Footer() {
   return (
-    <Footer className='footer'>
+    <footer className='footer'>
         <div className="container">
 
         </div>
-    </Footer>
+    </footer>
   )
 }

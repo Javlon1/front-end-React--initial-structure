@@ -1,11 +1,11 @@
 import * as React from 'react'
 import './Header.scss'
-import Logo from '../../Assets/Img/logo.png'
-import { Btn, Nav } from '../../Data/Data'
+// import Logo from '../../Assets/Img/logo.png'
+// import { Btn, Nav } from '../../Data/Data'
 
 export default function Header() {
-  const lang = ['uz', 'ru', 'en']
-  const [lan, setLan] = React.useState('');
+//   const lang = ['uz', 'ru', 'en']
+//   const [lan, setLan] = React.useState('');
   const [scrol, setScrol] = React.useState(false)
   const offSet = 80;
 
@@ -19,16 +19,16 @@ export default function Header() {
     }
   })
 
-  const handleChange = (event) => {
-    setLan(event.target.value);
-  };
-  console.log(lan);
+//   const handleChange = (event) => {
+//     setLan(event.target.value);
+//   };
+//   console.log(lan);
 
   return (
-    <Header className={scrol ? 'header header__bc' : 'header'}>
+    <header className={scrol ? 'header header__bc' : 'header'}>
       <div className="container">
-        
+        <h1>salom</h1>
       </div>
-    </Header>
+    </header>
   )
 }
