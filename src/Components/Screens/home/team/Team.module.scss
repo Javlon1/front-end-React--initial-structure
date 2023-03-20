@@ -1,0 +1,141 @@
+@import '../../../../assets/variables';
+
+.team {
+    padding-bottom: 10rem;
+
+    .container {
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 100px;
+
+            &__p {
+                display: block;
+                color: $beige;
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+
+            &__h2 {
+                font: {
+                    weight: 700;
+                    size: 38px;
+                }
+
+                margin-bottom: 0;
+            }
+
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &__item {
+                width: 300px;
+                margin-bottom: 30px;
+
+                &__social {
+                    background-color: $white;
+                    text-align: center;
+                    box-shadow: 0px 0px 15px 0px #ddd;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    max-width: 85%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    top: -40px;
+                    position: relative;
+                    transition: $transition;
+
+                    &__list {
+                        margin: 0;
+                        padding: 0;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        background-color: #282828;
+                        max-width: 155px;
+                        margin-right: auto;
+                        margin-left: auto;
+                        border-radius: 30px;
+                        position: absolute;
+                        top: -25px;
+                        left: 0;
+                        right: 0;
+                        box-shadow: 0px 8px 13px 0px #ddd;
+                        transition: $transition;
+
+                        &__item {
+                            list-style-type: none;
+                            display: inline-block;
+                            margin-right: 9px;
+                            margin-left: 9px;
+
+                            &__a {
+                                display: block;
+                                color: $beige;
+                            }
+                        }
+
+                    }
+
+                    &__title {
+                        &__p {
+                            padding-top: 25px;
+                            margin-bottom: 4px;
+                            transition: $transition;
+                            color: $black;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+                    }
+
+                    &__position {
+                        display: block;
+                        color: $beige;
+                        font-size: 14px;
+                        transition: $transition;
+                    }
+                }
+
+                &:hover {
+                    &__social {
+                        background-color: $beige;
+                        width: 100%;
+
+                        &__list {
+                            background-color: $white;
+                            box-shadow: none;
+
+                            &__item {
+                                &__a {
+                                    &:hover {
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+
+                        &__title {
+                            &__p {
+                                &:hover {
+                                    color: $black;
+                                }
+
+                            }
+
+                        }
+
+                        &__position {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.scss';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import Intro from './Components/Intro/Intro';
 
 function App() {
   const [scrol, setScrol] = useState(false)
@@ -45,10 +44,9 @@ function App() {
   //
   return (
     <div className="App">
-      <Header/>
-      <Intro/>
+      <Header />
 
-      <Footer/>
+      <Footer />
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
           <path className='scroll-up__svg__path'

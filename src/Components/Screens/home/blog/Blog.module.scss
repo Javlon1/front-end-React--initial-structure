@@ -1,0 +1,150 @@
+@import '../../../../assets/variables';
+
+.blog {
+    .container {
+        &__div {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 5rem;
+
+            &__title {
+                display: block;
+                color: $beige;
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            &__text {
+                font: {
+                    weight: 700;
+                    size: 38px;
+                }
+
+                margin-bottom: 0;
+            }
+        }
+
+        &__list {
+            margin-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__item {
+                width: 30%;
+                border-radius: 0 0 8px 8px;
+                margin-bottom: 30px;
+                box-shadow: 0px 0px 12px 0px #ddddddad;
+                transition: $transition;
+                margin-left: 15px;
+                margin-right: 15px;
+
+                &:hover {
+                    transform: translate(0, -10px);
+                }
+
+                &__a {
+                    display: block;
+
+                    &__img {
+                        width: 100%;
+                        height: 260px;
+                        border-radius: 8px 8px 0 0;
+                    }
+                }
+
+                &__div {
+                    padding: 0 15px 30px 20px;
+
+                    span {
+                        display: block;
+                        text-align: center;
+                        font: {
+                            size: 1rem;
+                            weight: 600;
+                        }
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        max-width: 165px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        position: relative;
+                        margin-top: -20px;
+                        border-radius: 30px;
+                        background-color: $beige;
+                        margin-bottom: 30px;
+                        color: $white;
+                    }
+
+                    h3 {
+                        margin-bottom: 18px;
+                        line-height: 1.4;
+
+                        a {
+                            display: block;
+                            font-weight: 600;
+                            font-size: 20px;
+                            color: #111111;
+
+                            &:hover {
+                                transition: $transition;
+                                color: $beige;
+                            }
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+                        color: #646464;
+                    }
+
+                    &__link {
+                        display: block;
+                        color: $beige;
+                        font-weight: 600;
+                        font-size: 18px;
+
+                        i {
+                            font-size: 20px;
+                            font-weight: 700;
+                            position: relative;
+                            top: 2px;
+                            left: 2px;
+                        }
+
+                        &:hover {
+                            transition: $transition;
+                            color: $black;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+        .pagination{
+            display: flex;
+            justify-content: center;
+            .page {
+                margin-bottom: 15rem;
+                background: $beige;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                position: relative;
+                
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    left: -5px;
+                    top: -5px;
+                    border: 1px solid $beige;
+                }
+            }
+        }
+    }
+}
