@@ -1,0 +1,138 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: $black;
+
+    .container {
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__logo {
+                width: 107px;
+                height: 50px;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 600px;
+
+                &__item {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    position: relative;
+                    transition: $transition;
+                    color: $white;
+                    margin-bottom: 12px;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 7px;
+                        height: 7px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        bottom: -12px;
+                        transform: rotate(45deg);
+                        transition: $transition;
+                        opacity: 0;
+                        animation: a-one 5s linear infinite;
+                        background-color: $beige;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        color: $beige;
+
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
+
+                }
+
+            }
+
+            &__btn {
+                background-color: transparent;
+                border: transparent;
+
+                &__a {
+                    width: 150px;
+                    display: inline-block;
+                    font-size: 16px;
+                    color: $white;
+                    border: 1px solid $beige;
+                    padding: 12px 15px;
+                    position: relative;
+                    z-index: 1;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: $transition;
+                        background-color: $beige;
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        right: 0;
+                        top: 0;
+                        width: 0;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: $transition;
+                        background-color: $beige;
+                    }
+
+                    &:hover {
+                        &:before {
+                            width: 50%;
+                            opacity: 1;
+                        }
+
+                        &:after {
+                            width: 50%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes a-one {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

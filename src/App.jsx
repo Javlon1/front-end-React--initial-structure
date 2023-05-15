@@ -1,9 +1,13 @@
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
+import Footer from './Components/layout/Footer/Footer';
+import Header from './Components/layout/Header/Header';
+import Loader from './Components/Ui/Loader/Loader';
+import Home from './Pages/Home/Home';
 
 function App() {
+
   const [scrol, setScrol] = useState(false)
   const offSet = 100;
   const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -24,27 +28,35 @@ function App() {
   };
 
   // 
-  document.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-  });
+  // document.addEventListener('contextmenu', (e) => {
+  //   e.preventDefault();
+  // });
 
-  document.onkeydown = (e) => {
-    if (e.keyCode === 123) {
-      return false;
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
-      return false
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
-      return false
-    } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
-      return false
-    } else if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
-      return false
-    }
-  };
+  // document.onkeydown = (e) => {
+  //   if (e.keyCode === 123) {
+  //     return false;
+  //   } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
+  //     return false
+  //   } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
+  //     return false
+  //   } else if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
+  //     return false
+  //   } else if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
+  //     return false
+  //   }
+  // };
   //
+
   return (
     <div className="App">
       <Header />
+
+        <Routes>
+
+          <Route path='*' element={<Loader />} />
+          <Route path='/' element={<Home />} />
+
+        </Routes>
 
       <Footer />
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
