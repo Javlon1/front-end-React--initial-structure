@@ -4,6 +4,7 @@ import './App.scss';
 import Footer from './Components/layout/Footer/Footer';
 import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
+import NotFound from './Components/Ui/PageNotFound/notFound.jsx';
 import Home from './Pages/Home/Home';
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
 
         <Routes>
 
-          <Route path='*' element={<Loader />} />
+          <Route path='*' element={<NotFound />} />
           <Route path='/' element={<Home />} />
 
         </Routes>

@@ -1,0 +1,38 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
+.notFound{
+    margin: 150px 0;
+    .container{
+        &__item{
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            h1{
+                font-size: 130px;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 600;
+                font-size: 35px;
+                color: #646464;
+            }
+            span {
+                display: block;
+                color: #646464;
+            }
+            a {
+                display: inline-block;
+                color: $white;
+                background-color: $beige;
+                padding: 20px 45px;
+                font-size: 18px;
+                transition: $transition;
+                &:hover {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}

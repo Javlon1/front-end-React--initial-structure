@@ -1,0 +1,94 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.newsletter {
+    position: relative;
+    top: -120px;
+    width: 50%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: $black;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px 50px 60px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__form {
+            width: 60%;
+
+            &__title {
+                font-weight: 700;
+                font-size: 32px;
+                font-family: playfair display, serif;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+
+            &__inp {
+                width: 70%;
+                height: 50px;
+                border: 1px solid #b69d74;
+                background-color: transparent;
+                padding-left: 20px;
+                color: #fff;
+                font-size: 15px;
+            }
+
+
+            &__btn {
+                background-color: $beige;
+                border: transparent;
+                width: 150px;
+                height: 50px;
+                display: inline-block;
+                font-size: 16px;
+                color: $white;
+                padding: 12px 15px;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: $transition;
+                    background-color: #333333;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: $transition;
+                    background-color: #333333;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 50%;
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        width: 50%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
