@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { Link } from 'react-router-dom';
-import './notFound.scss'
+import './404.scss'
 
 
 const NotFound = () => {
@@ -12,10 +11,10 @@ const NotFound = () => {
                     <h1>404!</h1>
                     <p>Sorry! The Page Not Found</p>
                     <span>Oops! The page you are looking for does not exit. it might been moved or deleted.</span>
-                    <Link to="/"
+                    <a href="/"
                     onClick={() => {
                       localStorage.setItem('menu', 1)
-                    }}>Return to Home</Link>
+                    }}>Return to Home</a>
                 </div>
             </div>
         </section>

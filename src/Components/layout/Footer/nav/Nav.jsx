@@ -28,7 +28,7 @@ const Nav = () => {
                         {
                             socialLink?.map((e) => (
                                 <li
-                                    className='styles.container__item1__list__item'
+                                    className='container__item1__list__item'
                                     key={e.id}>
                                     <a
                                         href={e.link}
@@ -48,7 +48,7 @@ const Nav = () => {
                     <ul className='container__item2__list'>
                         {
                             HeaderData?.map((e) => (
-                                <Link className='container__item2__list__a' key={e.id} href={e.link}>
+                                <Link className='container__item2__list__a' key={e.id} to={e.link}>
                                     <li
                                         className={`${fil === e.id ? 'container__item2__list__a__item active' : 'container__item2__list__a__item'}`}
                                         onClick={() => {
