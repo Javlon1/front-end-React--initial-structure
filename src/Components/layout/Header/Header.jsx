@@ -10,6 +10,7 @@ export default function Header() {
 
   const { lan, menu, setMenu } = React.useContext(Context)
   const [scrol, setScrol] = React.useState(false)
+  const [nav, setNav] = React.useState(false)
   const offSet = 80;
 
   const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -25,13 +26,13 @@ export default function Header() {
   const [fil, setFil] = React.useState(HeaderData[menu - 1].id)
 
   return (
-    <header className={scrol ? 'header header__bc' : 'header'}>
+    <header className={scrol ? 'header' : 'header'}>
       <div className="container">
         <nav className='container__nav'>
           <Link to='/'>
             <img className='container__nav__logo' src={Img} alt="" />
           </Link>
-          <ul className='container__nav__list'>
+          <ul className={nav ? 'container__nav__list active-nav' : 'container__nav__list'}>
             {
               HeaderData?.map((e) => (
                 <Link key={e.id} to={e.link}>
@@ -48,11 +49,12 @@ export default function Header() {
             }
             <Language />
           </ul>
-          <button className='container__nav__btn'>
+          <button className={nav ? 'container__nav__btn active-nav' : 'container__nav__btn'}>
             <Link to='/log-in' className='container__nav__btn__a'>
               log-in
             </Link>
           </button>
+          <div onClick={() => setNav(!nav)} className={nav ? 'container__nav__btnHam active-Ham' : 'container__nav__btnHam'}></div>
         </nav>
       </div>
     </header>
