@@ -39,16 +39,16 @@ export const HeaderData = [
 
 export const Lang = [
     {
-        id:1,
-        lang:'uz'
+        id: 1,
+        lang: 'uz'
     },
     {
-        id:2,
-        lang:'ru'
+        id: 2,
+        lang: 'ru'
     },
     {
-        id:3,
-        lang:'en'
+        id: 3,
+        lang: 'en'
     },
 ]
 
@@ -99,5 +99,53 @@ export const socialLink = [
         id: 4,
         link: '',
         icon: 'facebook'
+    },
+]
+
+export const counter = [
+    
+    {
+        id: 1,
+        count: '20 +',
+        name: 'Our Workers',
+        icon: 'person-fill'
+    }, 
+    {
+        id: 2,
+        count: '100 %',
+        name: 'Legal Way',
+        icon: 'award'
+    }, 
+    {
+        id: 3,
+        count: '10 000',
+        name: 'Happy Clients',
+        icon: 'people-fill'
+    }, 
+    {
+        id: 4,
+        count: '100 000',
+        name: 'Projects Done',
+        icon: 'check2-all'
+    }
+] 
+
+export const Inner = [
+    {
+        id:1,
+        icon: 'bi bi-check2-circle',
+        text: 'Quick Reply'
+    },{
+        id:2,
+        icon: 'bi bi-check2-circle',
+        text: 'Browse Our Website'
+    },{
+        id:3,
+        icon: 'bi bi-check2-circle',
+        text: 'Choose Services'
+    },{
+        id:4,
+        icon: 'bi bi-check2-circle',
+        text: 'Best Performances'
     },
 ]

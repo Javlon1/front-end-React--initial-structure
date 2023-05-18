@@ -1,0 +1,78 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.intro {
+    background-color: $intro-bc;
+    padding-bottom: 9rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            width: 40%;
+            color: $white;
+
+            &__title {
+                padding-top: 120px;
+                margin-bottom: 30px;
+
+                font: {
+                    size: 48px;
+                    weight: 800;
+                }
+            }
+
+            &__text {
+                margin-bottom: 40px;
+                color: #e0e0e0;
+
+                font: {
+                    size: 16px;
+                }
+
+            }
+
+            &__btn {
+                display: inline-block;
+                color: $white;
+                border: 3px solid $beige;
+                padding: .9rem 25px;
+
+                i {
+                    display: inline-block;
+
+                    font: {
+                        size: 20px;
+                    }
+
+                    position: relative;
+                    top: 1px;
+                    left: 5px;
+                    transition: $transition;
+                }
+
+                &:hover {
+                    transition: $transition;
+                    background-color: $beige;
+
+                    i {
+                        left: 0;
+                    }
+                }
+
+            }
+        }
+
+        &__right {
+            width: 50%;
+
+            &__img {
+                position: relative;
+                top: 20px;
+                z-index: 10;
+                width: 450px;
+                height: 600px;
+            }
+        }
+    }
+}

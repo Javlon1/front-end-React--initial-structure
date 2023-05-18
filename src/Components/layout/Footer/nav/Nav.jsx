@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Context } from '../../../../Context/Context'
 import { HeaderData, contactUs, socialLink } from '../../../../Data/Data'
 import './Nav.scss'
+import Img from '../../../../Assets/Img/img.webp'
 
 const Nav = () => {
 
@@ -19,7 +20,7 @@ const Nav = () => {
                     <Link
                         className='container__item1__img'
                         href='/'>
-                        <img src="" alt="" />
+                        <img src={Img} alt="" />
                     </Link>
                     <p className='container__item1__text'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cumque illum delectus iste, unde pariatur culpa at quod. Tempora est expedita blanditiis praesentium illo reiciendis odit ratione iste harum modi!
