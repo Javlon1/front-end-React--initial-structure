@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Intro.scss'
 import Intr from '../../../../Assets/Img/img.webp'
 
-const Intro = () => {
+export default function Intro() {
     return (
         <section className='intro'>
             <div className='container'>
@@ -26,5 +26,3 @@ const Intro = () => {
         </section>
     )
 }
-
-export default Intro;

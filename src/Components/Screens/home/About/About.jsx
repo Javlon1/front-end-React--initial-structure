@@ -5,7 +5,7 @@ import './About.scss'
 import Counter from './Counter/Counter';
 import Img from '../../../../Assets/Img/img.webp'
 
-const About = () => {
+export default function About() {
     return (
         <section className='about'>
             <div className='container'>
@@ -39,5 +39,3 @@ const About = () => {
         </section>
     )
 }
-
-export default About;
