@@ -8,17 +8,19 @@
             padding-bottom: 20px;
             padding-right: 1.5rem;
             background-color: $white;
-            position: relative; 
+            position: relative;
             top: -110px;
             z-index: 5;
 
-            &__list{
+            &__list {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                &__item{
+
+                &__item {
                     margin-bottom: 30px;
                     position: relative;
+
                     i {
                         color: $beige;
                         display: inline-block;
@@ -27,24 +29,158 @@
                         top: 0;
                         left: 20px;
                     }
-                    &__div{
+
+                    &__div {
                         padding-left: 90px;
-                
+
                         h3 {
                             font-weight: 600;
                             font-size: 36px;
                             color: $beige;
                             margin-bottom: 0;
                         }
+
                         p {
                             margin-bottom: 0;
                             font-weight: 600;
                             font-size: 18px;
                             color: #504f4f;
                         }
-        
+
                     }
-        
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .counter {
+        .container {
+            &__div {
+                padding-top: 50px;
+                padding-bottom: 20px;
+                padding-right: 1.5rem;
+                top: -110px;
+                z-index: 5;
+
+                &__list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &__item {
+                        margin-bottom: 25px;
+
+                        i {
+                            font-size: 40px;
+                            top: -8px;
+                            left: 20px;
+                        }
+
+                        &__div {
+                            padding-left: 70px;
+
+                            h3 {
+                                font-weight: 500;
+                                font-size: 20px;
+                            }
+
+                            p {
+                                font-weight: 500;
+                                font-size: .77rem;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .counter {
+        .container {
+            &__div {
+                padding-top: 40px;
+                padding-bottom: 20px;
+                padding-right: 1.5rem;
+                top: -90px;
+                z-index: 5;
+
+                &__list {
+
+                    &__item {
+                        margin-bottom: 20px;
+
+                        i {
+                            font-size: 30px;
+                            top: -8px;
+                            left: 20px;
+                        }
+
+                        &__div {
+                            padding-left: 55px;
+
+                            h3 {
+                                font-weight: 400;
+                                font-size: .9rem;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: .5rem;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .counter {
+        .container {
+            &__div {
+                padding-top: 40px;
+                padding-bottom: 20px;
+                padding-right: 1.5rem;
+                top: -90px;
+                z-index: 5;
+
+                &__list {
+
+                    &__item {
+                        margin-bottom: 20px;
+
+                        i {
+                            font-size: 30px;
+                            top: -8px;
+                            left: 20px;
+                        }
+
+                        &__div {
+                            padding-left: 55px;
+
+                            h3 {
+                                font-weight: 400;
+                                font-size: .9rem;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: .5rem;
+                            }
+
+                        }
+
+                    }
                 }
             }
         }

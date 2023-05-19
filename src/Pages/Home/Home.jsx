@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <section className='home'>
             <Intro />
-            {/* <About /> */}
+            <About />
         </section>
     )
 }

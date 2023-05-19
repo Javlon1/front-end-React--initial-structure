@@ -6,6 +6,7 @@ import Counter from './Counter/Counter';
 import Img from '../../../../Assets/Img/img.webp'
 
 export default function About() {
+    
     return (
         <section className='about'>
             <div className='container'>
