@@ -189,3 +189,50 @@
         }
     }
 }
+
+@media only screen and (max-width: 522px) {
+    .counter {
+        width: 100%;
+        .container {
+            width: 100%;
+            &__div {
+                width: 90%;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                padding-right: 1.5rem;
+                top: -90px;
+                z-index: 5;
+
+                &__list {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    &__item {
+                        margin-bottom: 20px;
+
+                        i {
+                            font-size: 25px;
+                            top: -4px;
+                            left: 25px;
+                        }
+
+                        &__div {
+                            padding-left: 55px;
+
+                            h3 {
+                                font-weight: 400;
+                                font-size: .8rem;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: .5rem;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
