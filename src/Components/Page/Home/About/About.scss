@@ -270,7 +270,7 @@
                     max-width: 520px;
 
                     &__title {
-                        margin-top: 100px;
+                        margin-top: 10px;
 
                         font: {
                             size: 38px;
@@ -335,21 +335,23 @@
 
             &__row {
                 &__left {
-                    width: 500px;
+                    border: 1px solid red;
+                    width: 100%;
                     padding-top: 65px;
                     padding-bottom: 65px;
 
                     &__img {
-                        width: 510px;
+                        width: 490px;
                         height: 500px;
                     }
                 }
 
                 &__right {
-                    max-width: 100%;
+                    border: 1px solid red;
+                    width: 100%;
+                    margin-left: 0;
 
                     &__title {
-                        margin-top: 100px;
 
                         font: {
                             size: 38px;
