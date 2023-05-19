@@ -52,12 +52,12 @@ function App() {
     <div className="App">
       <Header />
 
-        <Routes>
+      <Routes>
 
-          <Route path='*' element={<NotFound />} />
-          <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
+        <Route path='/' element={<Home />} />
 
-        </Routes>
+      </Routes>
 
       <Footer />
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>

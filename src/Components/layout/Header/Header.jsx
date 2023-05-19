@@ -40,6 +40,7 @@ export default function Header() {
                     onClick={() => {
                       setMenu(e.id)
                       setFil(e.id)
+                      setNav(!nav)
                       localStorage.setItem('menu', e.id)
                     }}>
                     {e[`nav_${lan}`]}

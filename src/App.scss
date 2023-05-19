@@ -68,11 +68,11 @@ li {
   list-style-type: none;
 }
 
-img{
+img {
   object-fit: cover;
 }
 
-.scroll-up{
+.scroll-up {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -87,7 +87,8 @@ img{
   opacity: 0;
   transition: .2s;
   transform: translateY(25px);
-  &::before{
+
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -99,14 +100,19 @@ img{
     font-size: 2rem;
     content: '↑';
   }
-  &:hover{
-    color: $black;
+
+  &:hover {
+    color: $beige;
+    box-shadow: 0px 0px 20px 0px #dddddd75;
   }
-  &__svg{
-    &__path{
+
+  &__svg {
+    border-radius: 50%;
+
+    &__path {
       box-sizing: border-box;
       fill: none;
-      stroke: $black;
+      stroke: $beige;
       stroke-width: 4px;
       transition: .2s;
     }
@@ -114,7 +120,7 @@ img{
 }
 
 
-.active{
+.active {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);

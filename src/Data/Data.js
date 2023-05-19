@@ -103,48 +103,48 @@ export const socialLink = [
 ]
 
 export const counter = [
-    
+
     {
         id: 1,
         count: '20 +',
         name: 'Our Workers',
         icon: 'person-fill'
-    }, 
+    },
     {
         id: 2,
         count: '100 %',
         name: 'Legal Way',
         icon: 'award'
-    }, 
+    },
     {
         id: 3,
         count: '10 000',
         name: 'Happy Clients',
         icon: 'people-fill'
-    }, 
+    },
     {
         id: 4,
         count: '100 000',
         name: 'Projects Done',
         icon: 'check2-all'
     }
-] 
+]
 
 export const Inner = [
     {
-        id:1,
+        id: 1,
         icon: 'bi bi-check2-circle',
         text: 'Quick Reply'
-    },{
-        id:2,
+    }, {
+        id: 2,
         icon: 'bi bi-check2-circle',
         text: 'Browse Our Website'
-    },{
-        id:3,
+    }, {
+        id: 3,
         icon: 'bi bi-check2-circle',
         text: 'Choose Services'
-    },{
-        id:4,
+    }, {
+        id: 4,
         icon: 'bi bi-check2-circle',
         text: 'Best Performances'
     },
@@ -152,19 +152,127 @@ export const Inner = [
 
 export const ownerdata = [
     {
-        id:1,
+        id: 1,
         icon: 'bi-file-text',
         title: 'Experience',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error eaque qui vero minus amet adipisci, culpa quisquam. Corrupti, eaque.'
-    },{
-        id:2,
+    }, {
+        id: 2,
         icon: 'bi-person',
         title: 'Experienced IT specialist',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error eaque qui vero minus amet adipisci, culpa quisquam. Corrupti, eaque.'
-    },{
-        id:3,
+    }, {
+        id: 3,
         icon: 'bi-clock-history',
         title: 'Process',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error eaque qui vero minus amet adipisci, culpa quisquam. Corrupti, eaque.'
     },
+]
+
+export const Teams = [
+    {
+        id: 1,
+        fullName: 'Mukhammadjonov Javlon',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: '/'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }, {
+        id: 2,
+        fullName: 'Mukhammadjonov Javlon',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: '/'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }, {
+        id: 3,
+        fullName: 'Mukhammadjonov Javlon',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: '/'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }, {
+        id: 4,
+        fullName: 'Mukhammadjonov Javlon',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: '/'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }
 ]
