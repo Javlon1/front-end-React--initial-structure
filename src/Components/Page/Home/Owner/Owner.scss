@@ -1,0 +1,360 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.owner {
+    color: $white;
+    background-color: $owner-bc;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__left {
+            width: 45%;
+
+            &__div {
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: -7px;
+
+                &__title {
+                    display: block;
+                    color: $beige;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                &__text {
+                    font: {
+                        weight: 700;
+                        size: 38px;
+                    }
+
+                    margin-bottom: 0;
+                }
+            }
+
+            &__list {
+                margin: 0;
+                padding: 0;
+
+                &__item {
+                    border: 2px solid $beige;
+                    padding: 1rem;
+                    list-style-type: none;
+                    display: block;
+                    position: relative;
+                    margin-bottom: 50px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &__icon {
+                        position: absolute;
+                        top: 1.5rem;
+                        left: 1rem;
+
+                        i {
+                            color: $beige;
+                            font-size: 45px;
+                            position: absolute;
+                            left: 1.3rem;
+                            top: 15px;
+                        }
+
+                    }
+
+                    &__title {
+                        padding-left: 115px;
+
+                        font: {
+                            size: 28px;
+                            weight: 700;
+                        }
+
+                        margin-bottom: 18px;
+                        color: $white;
+                    }
+
+                    &__text {
+                        padding-left: 115px;
+
+                        font: {
+                            size: 1rem;
+                            weight: 600;
+                        }
+
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            &__expertise {
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                padding: 2rem;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    border: 10px solid $beige;
+                    background-color: #373535;
+                }
+
+                &__img {
+                    width: 600px;
+                    height: 800px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1399px) {
+    .owner {
+
+        .container {
+
+            &__right {
+                &__expertise {
+
+                    &__img {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .owner {
+
+        .container {
+            &__left {
+
+                &__div {
+                    margin-bottom: 40px;
+
+                    &__title {
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    &__text {
+                        font: {
+                            weight: 600;
+                            size: 30px;
+                        }
+                    }
+                }
+
+                &__list {
+
+                    &__item {
+
+                        &__icon {
+                            top: 1.5rem;
+                            left: 1rem;
+
+                            i {
+                                font-size: 45px;
+                                left: 1.3rem;
+                                top: 15px;
+                            }
+
+                        }
+
+                        &__title {
+                            padding-left: 115px;
+
+                            font: {
+                                size: 20px;
+                                weight: 700;
+                            }
+
+                            margin-bottom: 18px;
+                        }
+
+                        &__text {
+                            padding-left: 115px;
+
+                            font: {
+                                size: .8rem;
+                                weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                &__expertise {
+
+                    &__img {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .owner {
+        .container {
+            display: block;
+
+            &__left {
+                width: 100%;
+
+                &__div {
+                    &__text {
+                        font: {
+                            weight: 700;
+                            size: 38px;
+                        }
+                    }
+                }
+
+                &__list {
+                    &__item {
+                        &__icon {
+                            &__img {
+                                margin-top: -5px;
+                            }
+                        }
+
+                        &__title {
+                            padding-left: 115px;
+
+                            font: {
+                                size: 28px;
+                                weight: 700;
+                            }
+
+                            margin-bottom: 18px;
+                            color: $white;
+                        }
+
+                        &__text {
+                            padding-left: 115px;
+
+                            font: {
+                                size: 1rem;
+                                weight: 600;
+                            }
+
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                margin-top: 2.5rem;
+
+                &__expertise {
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .owner {
+        .container {
+            &__left {
+                &__div {
+                    margin-bottom: 40px;
+
+                    &__title {
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+
+                    &__text {
+                        font: {
+                            weight: 500;
+                            size: 25px;
+                        }
+                    }
+                }
+
+                &__list {
+                    &__item {
+                        &__icon {
+                            top: 1.5rem;
+                            left: 1rem;
+                            &__img{
+                                width: 80px;
+                                margin-top: -18px;
+                            }
+                            i {
+                                font-size: 40px;
+                                left: 1.3rem;
+                                top: 1px;
+                            }
+
+                        }
+
+                        &__title {
+                            padding-left: 105px;
+
+                            font: {
+                                size: 18px;
+                                weight: 700;
+                            }
+
+                            margin-bottom: 18px;
+                        }
+
+                        &__text {
+                            padding-left: 105px;
+
+                            font: {
+                                size: .7rem;
+                                weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                &__expertise {
+
+                    &:before {
+                        border: 5px solid $beige;
+                    }
+
+                    &__img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
