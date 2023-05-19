@@ -10,7 +10,7 @@ export default function About() {
         <section className='about'>
             <div className='container'>
                 <Counter />
-
+ 
                 <div className="container__row">
                     <div className="container__row__left">
                         <img className='container__row__left__img' src={Img} alt="index-adout" />
