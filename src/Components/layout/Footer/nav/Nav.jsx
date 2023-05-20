@@ -75,7 +75,7 @@ const Nav = () => {
                             contactUs?.map((e) => (
                                 <li key={e.id}>
                                     <Link
-                                        href={e.tel ? `tel:${e.tel}` : e.email ? `mailto:${e.email}` : e.link}
+                                        to={e.tel ? `tel:${e.tel}` : e.email ? `mailto:${e.email}` : e.link}
                                         target="_blank"
                                     >
                                         <i className={`bi bi-${e.icon}-fill`}></i>

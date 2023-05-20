@@ -274,5 +274,128 @@ export const Teams = [
                 link: '/'
             },
         ]
+    }, {
+        id: 5,
+        fullName: 'Mukhammadjonov Javlon5',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: 'https://t.me/Muhammadjonov_javlon'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }, {
+        id: 6,
+        fullName: 'Mukhammadjonov Javlon6',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: 'https://t.me/Muhammadjonov_javlon'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    }, {
+        id: 7,
+        fullName: 'Mukhammadjonov Javlon7',
+        position: 'Front-end developer',
+        social: [
+            {
+                id: 1,
+                icon: 'instagram',
+                link: '/'
+            },
+            {
+                id: 2,
+                icon: 'telegram',
+                link: 'https://t.me/Muhammadjonov_javlon'
+            },
+            {
+                id: 3,
+                icon: 'whatsapp',
+                link: '/'
+            },
+            {
+                id: 4,
+                icon: 'youtube',
+                link: '/'
+            },
+        ]
+    },
+]
+
+
+export const Location = [
+    {
+        id: 1,
+        icon: 'bi-geo-alt-fill',
+        name: 'Location',
+        text: [
+            {
+                id: 1,
+                link: 'https://www.google.com/maps/dir//40.7395652,72.3295289/@40.7393973,72.3293271,18.5z/data=!4m2!4m1!3e0?hl=ru-KG',
+                icon: 'geo-alt',
+                item: 'улица Мустакиллик 2, Андижан, Узбекистан'
+            },
+        ]
+    }, {
+        id: 2,
+        icon: 'bi-envelope',
+        name: 'Email',
+        text: [
+            {
+                id: 2,
+                email: 'muhamedmijotot@gmail.com',
+                icon: 'envelope-at',
+                item: 'muhamedmijotot@gmail.com'
+            }
+        ]
+    }, {
+        id: 3,
+        icon: 'bi-telephone-fill',
+        name: 'Phone',
+        text: [
+            {
+                id: 3,
+                tel: '998905251243',
+                item: '+998905251243'
+            },
+            {
+                id: 4,
+                tel: '998982702700',
+                item: '+998982702700'
+            }
+        ]
     }
 ]
