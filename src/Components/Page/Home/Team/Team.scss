@@ -1,0 +1,115 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.team {
+    margin: 70px 0;
+
+    .container {
+        &__title {
+            text-align: center;
+            color: $beige;
+            font-weight: 700;
+        }
+
+        &__text {
+            text-align: center;
+            margin-bottom: 40px;
+            color: $black;
+            font-weight: 700;
+        }
+
+        &__item {
+            width: 90%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &__img {
+                width: 100%;
+            }
+
+            &__list {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $black;
+                color: $beige;
+                border-radius: 1.4rem;
+                padding: .5rem 1rem;
+                position: relative;
+                top: -2rem;
+                box-shadow: 0px 8px 13px 0px #ddd;
+                transition: $transition;
+                z-index: 2;
+
+                &__item {
+                    color: $beige;
+                }
+            }
+
+            &__main {
+                width: 80%;
+                height: 120px;
+                background-color: $white;
+                position: relative;
+                transition: $transition;
+                box-shadow: 0px 8px 13px 0px #ddd;
+                top: -55px;
+                &__name {
+                    padding-top: 1.3rem;
+                    margin-bottom: 8px;
+                    transition: $transition;
+
+                    a {
+                        transition: $transition;
+                        color: $black;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                }
+                &__position{
+                    color: $beige;
+                    transition: $transition;
+                }
+            }
+            &:hover {
+                .container__item {
+                    &__list {
+                        background-color: #fff;
+                        &__item {
+                            &:hover{
+                                transition: $transition;
+                                color: #000;
+                            }
+                        }
+                    }
+        
+                    &__main {
+                        width: 100%;
+                        background-color: $beige;
+                        &__name {
+        
+                            a {
+                                color: #fff;
+                                &:hover{
+                                    transition: $transition;
+                                    color: #000;
+                                }
+                            }
+        
+                        }
+                        &__position{
+                            color: $black;
+                        }
+                    }
+        
+                }
+                
+            }
+        }
+        
+    }
+}

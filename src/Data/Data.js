@@ -172,7 +172,7 @@ export const ownerdata = [
 export const Teams = [
     {
         id: 1,
-        fullName: 'Mukhammadjonov Javlon',
+        fullName: 'Mukhammadjonov Javlon1',
         position: 'Front-end developer',
         social: [
             {
@@ -183,7 +183,7 @@ export const Teams = [
             {
                 id: 2,
                 icon: 'telegram',
-                link: '/'
+                link: 'https://t.me/Muhammadjonov_javlon'
             },
             {
                 id: 3,
@@ -198,7 +198,7 @@ export const Teams = [
         ]
     }, {
         id: 2,
-        fullName: 'Mukhammadjonov Javlon',
+        fullName: 'Mukhammadjonov Javlon2',
         position: 'Front-end developer',
         social: [
             {
@@ -209,7 +209,7 @@ export const Teams = [
             {
                 id: 2,
                 icon: 'telegram',
-                link: '/'
+                link: 'https://t.me/Muhammadjonov_javlon'
             },
             {
                 id: 3,
@@ -224,7 +224,7 @@ export const Teams = [
         ]
     }, {
         id: 3,
-        fullName: 'Mukhammadjonov Javlon',
+        fullName: 'Mukhammadjonov Javlon3',
         position: 'Front-end developer',
         social: [
             {
@@ -235,7 +235,7 @@ export const Teams = [
             {
                 id: 2,
                 icon: 'telegram',
-                link: '/'
+                link: 'https://t.me/Muhammadjonov_javlon'
             },
             {
                 id: 3,
@@ -250,7 +250,7 @@ export const Teams = [
         ]
     }, {
         id: 4,
-        fullName: 'Mukhammadjonov Javlon',
+        fullName: 'Mukhammadjonov Javlon4',
         position: 'Front-end developer',
         social: [
             {
@@ -261,7 +261,7 @@ export const Teams = [
             {
                 id: 2,
                 icon: 'telegram',
-                link: '/'
+                link: 'https://t.me/Muhammadjonov_javlon'
             },
             {
                 id: 3,

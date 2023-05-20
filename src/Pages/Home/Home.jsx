@@ -1,5 +1,6 @@
 import * as React from 'react'
 import About from '../../Components/Page/Home/About/About'
+import Contact from '../../Components/Page/Home/Contact/Contact'
 import Intro from '../../Components/Page/Home/Intro/Intro'
 import Owner from '../../Components/Page/Home/Owner/Owner'
 import Team from '../../Components/Page/Home/Team/Team'
@@ -12,6 +13,7 @@ const Home = () => {
             <About />
             <Owner />
             <Team />
+            <Contact />
         </section>
     )
 }
