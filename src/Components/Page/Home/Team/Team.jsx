@@ -36,7 +36,8 @@ export default function Team() {
                     responsive={responsive}
                     ssr={true}
                     infinite={true}
-                    autoPlaySpeed={1000}
+                    autoPlay={true}
+                    autoPlaySpeed={2000}
                     keyBoardControl={true}
                     customTransition="all .5"
                     transitionDuration={500}

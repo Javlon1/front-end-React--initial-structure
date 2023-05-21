@@ -2,7 +2,7 @@
 
 .contact {
     background-color: $beige;
-    margin-bottom: 100px;
+
     .container {
         &__list {
             position: relative;
@@ -247,9 +247,9 @@
                             color: $white;
                             font-size: 1.5rem;
                         }
-    
+
                         main {
-    
+
                             a {
                                 margin-top: 0;
                                 font-size: .7rem;
@@ -257,7 +257,7 @@
                         }
                     }
                 }
-                
+
             }
 
             &__form {
