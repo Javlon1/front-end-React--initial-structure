@@ -9,9 +9,8 @@ const Nav = () => {
 
     const { lan, menu, setMenu } = React.useContext(Context)
 
-    const [fil, setFil] = React.useState(HeaderData[menu - 1].id)
+    setMenu(HeaderData[menu - 1].id)
 
-    console.log(HeaderData[menu - 1].id);
 
     return (
         <section className='nav'>
@@ -51,10 +50,9 @@ const Nav = () => {
                             HeaderData?.map((e) => (
                                 <Link className='container__item2__list__a' key={e.id} to={e.link}>
                                     <li
-                                        className={`${fil === e.id ? 'container__item2__list__a__item active' : 'container__item2__list__a__item'}`}
+                                        className={`${menu === e.id ? 'container__item2__list__a__item active' : 'container__item2__list__a__item'}`}
                                         onClick={() => {
                                             setMenu(e.id)
-                                            setFil(e.id)
                                             localStorage.setItem('menu', e.id)
                                         }}
                                     >

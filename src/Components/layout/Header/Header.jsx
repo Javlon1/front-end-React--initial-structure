@@ -22,8 +22,8 @@ export default function Header() {
       setScrol(false)
     }
   })
-
-  const [fil, setFil] = React.useState(HeaderData[menu - 1].id)
+  
+  setMenu(HeaderData[menu - 1].id)
 
   return (
     <header className={scrol ? 'header' : 'header'}>
@@ -36,10 +36,9 @@ export default function Header() {
             {
               HeaderData?.map((e) => (
                 <Link key={e.id} to={e.link}>
-                  <li className={`${fil === e.id ? 'container__nav__list__item active' : 'container__nav__list__item'}`}
+                  <li className={`${menu === e.id ? 'container__nav__list__item active' : 'container__nav__list__item'}`}
                     onClick={() => {
                       setMenu(e.id)
-                      setFil(e.id)
                       localStorage.setItem('menu', e.id)
                     }}>
                     {e[`nav_${lan}`]}
