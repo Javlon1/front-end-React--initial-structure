@@ -48,26 +48,28 @@ export default function Team() {
                 >
                     {
                         Teams?.map((e) => (
-                            <div className='container__item' key={e.id}>
-                                <img className='container__item__img' src={Img} alt="" />
-                                <ul className='container__item__list'>
-                                    {
-                                        e.social?.map((i) => (
-                                            <a href={i.link} target="_blank" className='container__item__list__item' key={i.id}>
-                                                <i className={`bi bi-${i.icon}`}></i>
-                                            </a>
-                                        ))
-                                    }
-                                </ul>
-                                <main className='container__item__main'>
-                                    <h2 className='container__item__main__name'>
-                                        <Link>
-                                            {e.fullName}
-                                        </Link>
-                                    </h2>
-                                    <p className='container__item__main__position'>{e.position}</p>
-                                </main>
-                            </div>
+                            <Link to='/team' key={e.id}>
+                                <div className='container__item'>
+                                    <img className='container__item__img' src={Img} alt="" />
+                                    <ul className='container__item__list'>
+                                        {
+                                            e.social?.map((i) => (
+                                                <a href={i.link} target="_blank" className='container__item__list__item' key={i.id}>
+                                                    <i className={`bi bi-${i.icon}`}></i>
+                                                </a>
+                                            ))
+                                        }
+                                    </ul>
+                                    <main className='container__item__main'>
+                                        <h2 className='container__item__main__name'>
+                                            <p>
+                                                {e.fullName}
+                                            </p>
+                                        </h2>
+                                        <p className='container__item__main__position'>{e.position}</p>
+                                    </main>
+                                </div>
+                            </Link>
                         ))
                     }
                 </Carousel>

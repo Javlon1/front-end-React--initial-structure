@@ -65,7 +65,8 @@
                     margin-bottom: 8px;
                     transition: $transition;
 
-                    a {
+                    p {
+                        margin-top: 1rem;
                         transition: $transition;
                         color: $black;
                         font-weight: 600;
@@ -95,7 +96,7 @@
                         background-color: $beige;
                         &__name {
         
-                            a {
+                            p {
                                 color: #fff;
                                 &:hover{
                                     transition: $transition;
