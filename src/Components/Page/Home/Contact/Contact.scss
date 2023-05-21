@@ -1,14 +1,14 @@
 @import '../../../../Assets/Sass/Veriables.scss';
 
 .contact {
-    background-color: $beige;
+    background-color: $black;
 
     .container {
         &__list {
             position: relative;
             top: -6rem;
             width: 100%;
-            background-color: $location-bc;
+            background-color: $beige;
             height: 200px;
             padding: 1rem;
             display: flex;
@@ -62,7 +62,6 @@
         }
 
         &__form {
-            background: $black;
             max-width: 100%;
             padding: 55px 100px;
             display: flex;

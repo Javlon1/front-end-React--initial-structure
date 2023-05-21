@@ -49,7 +49,7 @@ export default function Blog() {
                 >
                     {
                         Blogs?.map((e) => (
-                            <Link className='container__a' key={e.id}>
+                            <Link to='/blog-detail' className='container__a' key={e.id}>
                                 <img className='container__a__img' src={Img} alt="" />
                                 <div className='container__a__item'>
                                     <h3 className='container__a__item__sbject'>{e.subject}</h3>
