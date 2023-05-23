@@ -14,7 +14,7 @@ const Home = () => {
             <About />
             <Owner />
             <Team />
-            <Contact />
+            <Contact /> 
             <Blog />
         </section>
     )

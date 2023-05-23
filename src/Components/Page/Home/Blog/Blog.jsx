@@ -31,8 +31,8 @@ export default function Blog() {
                 <p className='container__title'>BLOG</p>
                 <h2 className='container__text'>Our Latest Blogs</h2>
                 <Carousel
-                    swipeable={false}
-                    draggable={false}
+                    swipeable={true}
+                    draggable={true}
                     showDots={true}
                     responsive={responsive}
                     ssr={true}
@@ -40,7 +40,7 @@ export default function Blog() {
                     autoPlay={true}
                     autoPlaySpeed={2000}
                     keyBoardControl={true}
-                    customTransition="all .5"
+                    customTransition="all 1.5s ease"
                     transitionDuration={500}
                     containerClass="carousel-container"
                     removeArrowOnDeviceType={["tablet", "mobile"]}

@@ -6,6 +6,7 @@ import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
 
 function App() {
 
@@ -51,11 +52,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-
+      
       <Routes>
 
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
 
       </Routes>
 

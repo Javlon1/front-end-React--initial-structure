@@ -22,8 +22,8 @@ export default function Header() {
       setScrol(false)
     }
   })
-  
-  setMenu(HeaderData[menu - 1].id)
+
+  setMenu(HeaderData[menu-1].id)
 
   return (
     <header className={scrol ? 'header' : 'header'}>
@@ -49,8 +49,8 @@ export default function Header() {
             <Language />
           </ul>
           <button className={nav ? 'container__nav__btn active-nav' : 'container__nav__btn'}>
-            <Link to='/log-in' className='container__nav__btn__a'>
-              log-in
+            <Link to='/' className='container__nav__btn__a'>
+              FREE CONSULTATION
             </Link>
           </button>
           <div onClick={() => setNav(!nav)} className={nav ? 'container__nav__btnHam active-Ham' : 'container__nav__btnHam'}></div>

@@ -30,8 +30,8 @@ export default function Team() {
                 <p className='container__title'>TEAM MEMBER</p>
                 <h2 className='container__text'>Meet Our Expert Attorneys</h2>
                 <Carousel
-                    swipeable={false}
-                    draggable={false}
+                    swipeable={true}
+                    draggable={true}
                     showDots={true}
                     responsive={responsive}
                     ssr={true}
@@ -39,7 +39,7 @@ export default function Team() {
                     autoPlay={true}
                     autoPlaySpeed={2000}
                     keyBoardControl={true}
-                    customTransition="all .5"
+                    customTransition="all 1.5s ease"
                     transitionDuration={500}
                     containerClass="carousel-container"
                     removeArrowOnDeviceType={["tablet", "mobile"]}

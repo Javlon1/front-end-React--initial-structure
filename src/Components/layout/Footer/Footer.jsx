@@ -8,6 +8,6 @@ export default function Footer() {
     <footer className='footer'>
       <Newsletter />
       <Nav/>
-    </footer>
+    </footer> 
   )
 }

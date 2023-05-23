@@ -9,7 +9,7 @@ const Nav = () => {
 
     const { lan, menu, setMenu } = React.useContext(Context)
 
-    setMenu(HeaderData[menu - 1].id)
+    setMenu((HeaderData[menu-1].id))
 
 
     return (
