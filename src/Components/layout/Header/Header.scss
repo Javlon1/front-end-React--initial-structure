@@ -185,8 +185,9 @@
                 }
 
                 &__btnHam {
+                    margin-right: .5rem;
                     display: block;
-                    width: 30px;
+                    width: 33px;
                     height: 3px;
                     background-color: #fff;
                     border-radius: 5px;
@@ -195,7 +196,7 @@
                     &:before {
                         content: "";
                         position: absolute;
-                        width: 30px;
+                        width: 33px;
                         height: 3px;
                         background-color: #fff;
                         border-radius: 5px;
@@ -207,7 +208,7 @@
                     &:after {
                         content: "";
                         position: absolute;
-                        width: 30px;
+                        width: 33px;
                         height: 3px;
                         background-color: #fff;
                         border-radius: 5px;
@@ -238,32 +239,14 @@
 }
 
 .active-Ham {
-    width: 30px;
-    height: 3px;
-    border-radius: 5px;
     transform: translateX(-50px);
     background-color: transparent !important;
-    transition: all .5s ease-in-out;
 
     &:before {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 5px;
-        transition: all .5s ease-in-out;
         transform: rotate(45deg) translate(35px, -35px) !important;
     }
 
     &:after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 5px;
-        transition: all .5s ease-in-out;
         transform: rotate(-45deg) translate(35px, 35px) !important;
     }
 }
