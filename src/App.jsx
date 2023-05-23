@@ -6,7 +6,7 @@ import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
+import AboutS from './Pages/AboutS/AboutS';
 
 function App() {
 
@@ -57,7 +57,7 @@ function App() {
 
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about' element={<AboutS />} />
 
       </Routes>
 
