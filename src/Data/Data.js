@@ -403,21 +403,56 @@ export const Location = [
 export const Blogs = [
     {
         id: 1,
-        subject:'Rights Case',
-        title:'Lorem ipsum dolor sit amet.',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        subject: 'Rights Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
         icon: 'bi-chevron-right',
+    }, {
+        id: 2,
+        subject: 'Business Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 3,
+        subject: 'Criminal Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    },
+]
+
+
+export const dataExpertise = [
+    {
+        id: 1,
+        title: 'Experience',
+        text: 'POA.AE teams are exceptionally skilled, acknowledge their client’s condition & help them to achieve their target',
+        icon: ''
     },{
         id: 2,
-        subject:'Business Case',
-        title:'Lorem ipsum dolor sit amet.',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
-        icon: 'bi-chevron-right',
+        title: 'Low Cost',
+        text: 'Team of POA.AE are exceptionally skilled, realize their client’s condition, help them to achieve their motive',
+        icon: ''
     },{
         id: 3,
-        subject:'Criminal Case',
-        title:'Lorem ipsum dolor sit amet.',
-        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
-        icon: 'bi-chevron-right',
+        title: 'Skilled Attorney',
+        text: 'Our attorneys are innovative and knowledgeable and help clients pursue a vast number of solutions to succeed',
+        icon: ''
+    },{
+        id: 4,
+        title: 'Good Performance',
+        text: 'Our attorneys are creative and knowledgeable and support clients by finding numerous solutions to win.',
+        icon: ''
+    },{
+        id: 5,
+        title: 'Legal Proces',
+        text: 'We maintain all valid papers and paperwork and continue to meet our destination legally',
+        icon: ''
+    },{
+        id: 6,
+        title: 'Quick Service',
+        text: 'We manage all valid papers and paperwork and continue to enter our path lawfully.',
+        icon: ''
     },
 ]

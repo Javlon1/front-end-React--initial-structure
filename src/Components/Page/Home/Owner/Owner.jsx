@@ -10,7 +10,7 @@ export default function Owner() {
             <div className='container'>
                 <div className="container__left">
                     <div className="container__left__div">
-                        <p className='container__left__div__title'>Owner</p>
+                        <p className='container__left__div__title'>the owner of the company</p>
                         <h2 className='container__left__div__text'>Owner Law firm dedicated to our clients</h2>
                     </div>
                     <ul className='container__left__list'>
