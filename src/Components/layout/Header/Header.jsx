@@ -39,7 +39,7 @@ export default function Header() {
                   <li className={`${menu === e.id ? 'container__nav__list__item active' : 'container__nav__list__item'}`}
                     onClick={() => {
                       setMenu(e.id)
-                      localStorage.setItem('menu', e.id)
+                      sessionStorage.setItem('menu', e.id)
                     }}>
                     {e[`nav_${lan}`]}
                   </li>

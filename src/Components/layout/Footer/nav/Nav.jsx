@@ -53,7 +53,7 @@ const Nav = () => {
                                         className={`${menu === e.id ? 'container__item2__list__a__item active' : 'container__item2__list__a__item'}`}
                                         onClick={() => {
                                             setMenu(e.id)
-                                            localStorage.setItem('menu', e.id)
+                                            sessionStorage.setItem('menu', e.id)
                                         }}
                                     >
                                         <i className="bi bi-chevron-right"></i>
