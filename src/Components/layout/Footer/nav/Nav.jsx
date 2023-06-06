@@ -9,7 +9,7 @@ const Nav = () => {
 
     const { lan, menu, setMenu } = React.useContext(Context)
 
-    setMenu((HeaderData[menu-1].id))
+    setMenu((HeaderData[menu - 1].id))
 
 
     return (
@@ -18,8 +18,12 @@ const Nav = () => {
                 <div className='container__item1'>
                     <Link
                         className='container__item1__img'
-                        href='/'>
-                        <img src={Img} alt="" />
+                        to='/'>
+                        <img src={Img} alt="" 
+                        onClick={() => {
+                            sessionStorage.setItem('menu', 1)
+                        }}
+                        />
                     </Link>
                     <p className='container__item1__text'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cumque illum delectus iste, unde pariatur culpa at quod. Tempora est expedita blanditiis praesentium illo reiciendis odit ratione iste harum modi!

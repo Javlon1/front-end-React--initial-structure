@@ -74,6 +74,7 @@
             &__list {
                 &__item {
                     padding: .8rem;
+
                     &__img {
                         width: 60px;
                         height: 60px;
@@ -134,9 +135,11 @@
     .expertise {
         .container {
             height: 100%;
-            &__title{
+
+            &__title {
                 margin-top: 1.3rem;
             }
+
             &__text {
                 font: {
                     size: 2rem;
@@ -146,6 +149,7 @@
             &__list {
                 &__item {
                     width: 100%;
+
                     &__img {
                         width: 60px;
                         height: 60px;

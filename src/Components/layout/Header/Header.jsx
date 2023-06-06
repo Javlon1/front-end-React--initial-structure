@@ -23,13 +23,16 @@ export default function Header() {
     }
   })
 
-  setMenu(HeaderData[menu-1].id)
+  setMenu(HeaderData[menu - 1].id)
 
   return (
     <header className={scrol ? 'header' : 'header'}>
       <div className="container">
         <nav className='container__nav'>
-          <Link to='/'>
+          <Link to='/'
+            onClick={() => {
+              sessionStorage.setItem('menu', 1)
+            }}>
             <img className='container__nav__logo' src={Img} alt="" />
           </Link>
           <ul className={nav ? 'container__nav__list active-nav' : 'container__nav__list'}>
